@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap');
+
+body{
+    background: #002131;
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+/* ----------------------------------------- Custom Styles----------------------------- */
+
+.container{
+    width: 80%;
+    max-width: 992px;
+    margin: auto;
+}
+
+button{
+    font-size: 1rem;
+    color: #fff;
+    background: #186d3e;
+    padding: 0.5em 2em;
+    border: none;
+    border-radius: 0.3em;
+}
+
+button:enabled:hover{
+    cursor: pointer;
+    background: #0f4628;
+}
+
+/* .remove-block{
+    display: none;
+} */
+
+img{
+    width: 100%;
+}
+
+.fade-in {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* ----------------------------------------- Start Block ----------------------------- */
+
+#start-block{
+    transition: opacity 1s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#start-block h1{
+    margin-bottom: 2em;
+}
+
+
+/* ----------------------------------------- Scores Section ----------------------------- */
+
+#scores{
+    display: flex;
+    justify-content: space-between;
+
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+/* -----------------------------------------  Game Block -----------------------------*/
+
+#game-block{
+    transition: opacity 1s ease 0.1s;
+}
+
+#game-block #imgs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#game-block #imgs div{
+    display: inline-block;
+}
+
+
+#game-block div#player img{
+    transform: rotateY(0.5turn);
+}
+
+#game-block h1{
+    text-align: center;
+    margin-top: 2em;
+}
+
+/* reset button */
+.reset-style{
+    display: block;
+    margin: auto;
+}
+
+.start-anim{
+    animation-name: movement;
+    animation-duration: 2s;
+}
+
+@keyframes movement {
+    0%  {transform: translateY(-30px);}
+    15% {transform: translateY(30px);}
+    30%  {transform: translateY(-30px);}
+    45% {transform: translateY(30px);}
+    60%  {transform: translateY(-30px);}
+    75% {transform: translateY(30px);}
+    90%  {transform: translateY(-30px);}
+    100% {transform: translateY(30px);}
+  }
+
+  @media (max-width: 575.98px){
+      html{
+          font-size: 12px;
+      }
+      .container{
+          width: 100%;
+      }
+      #game-block #buttons{
+          display: flex;
+          flex-direction: column;
+          align-items:center;
+      } 
+      #game-block #buttons button{
+          margin: 0.5em 0;
+      }
+      
+  }
+  
+
+
+

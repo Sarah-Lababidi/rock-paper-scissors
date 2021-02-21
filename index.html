@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <div id="scores">
+            <div id="player">
+                <p>Player</p>
+                <p>0</p>
+            </div>
+            <div id="playTo">
+                <p>
+                    <label for="selectScore">Play To: </label>
+                    <select name="endScore" id="selectScore">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select> 
+                </p>               
+            </div>
+            <div id="computer">
+                <p>Computer</p>
+                <p>0</p>
+            </div>
+        </div>
+        <div id="start-block">
+            <h1>Rock Paper and Scissors</h1>
+            <button type="button" id="play">Let's Play</button>
+        </div>
+
+        <div id="game-block" class="fade-out">
+            <h1>Choose an option</h1>
+            <button id="reset" class="fade-out">Reset</button>
+            <div id="imgs">
+                <div id="player"> 
+                    <img src="imgs/rock.png" alt="">
+                </div>
+                <div id="computer">
+                    <img src="imgs/rock.png" alt="">
+                </div>
+            </div>
+            <div id="buttons">
+                <button>rock</button>
+                <button>paper</button>
+                <button>scissors</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
